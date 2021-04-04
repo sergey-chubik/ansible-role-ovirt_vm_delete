@@ -1,2 +1,11 @@
 ---
-# tasks file for ovirt_vm_delete
+
+- name: ovirt_vm_delete | Shutdown and delete VM oVirt
+  ovirt_vm:
+    auth:
+      hostname: "{{ ovirt_auth_url }}"
+      username: "{{ ovirt_auth_user }}"
+      password: "{{ ovirt_auth_password }}"
+      ca_file: "{{ ovirt_auth_cafile }}"
+    name: "{{ ovirt_vm_name }}"
+    state: absent

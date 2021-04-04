@@ -1,2 +1,10 @@
 ---
-# defaults file for ovirt_vm_delete
+
+# Default authentication variables on the portal Ovirt
+ovirt_auth_url: ovirt.ekaterinburg.fsin.uis
+ovirt_auth_user:
+ovirt_auth_password:
+ovirt_auth_cafile: files/ovirt.ekaterinburg.fsin.uis.pem
+
+# Default variables for creating VM
+ovirt_vm_name: test
