@@ -4,7 +4,7 @@
 ovirt_auth_url: ovirt.ekaterinburg.fsin.uis
 ovirt_auth_user:
 ovirt_auth_password:
-ovirt_auth_cafile: files/ovirt.ekaterinburg.fsin.uis.pem
+ovirt_auth_cafile: "{{ role_path }}/files/ovirt.ekaterinburg.fsin.uis.pem"
 
 # Default variables for creating VM
 ovirt_vm_name: test
