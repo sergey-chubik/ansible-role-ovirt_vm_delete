@@ -1,6 +1,7 @@
 ---
 
 - name: ovirt_vm_delete | Shutdown and delete VM oVirt
+  connection: local
   ovirt_vm:
     auth:
       hostname: "{{ ovirt_auth_url }}"
